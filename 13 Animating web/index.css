@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'montserrat'; */
+    /* background-color: rgba(0, 0, 0, 0.13); */
+    /* outline: 1px solid red; */
+    /* z-index: normal; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+/* -------------------------------Custom Cursor ----------------- */
+#cursor{
+    height: 30px;
+    background-color: #95c11e;
+    width: 30px;
+    border-radius: 50%;
+    position: fixed;
+    /* z-index: 9; */
+    display: none;
+}
+#cursor-blur{
+    height: 450px;
+    background-color: #96c11e5f;
+    width: 450px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    filter: blur(100px);
+    top: 30%;
+    left: 35%;
+}
+#nav{
+    height: 145px;
+    width: 100%;
+    /* background-color: rgba(32, 32, 32, 0.851); */
+    padding: 0 160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* font-size: 10px; */
+    gap: 50px;
+    font-weight: bold;
+    /* we want to nav fixed all the time */
+    position: fixed; 
+    z-index: 999;
+}
+#nav h1{
+    cursor: pointer;
+    font-size: 25px;
+}
+#nav h1:hover{
+    /* color: rgb(70, 0, 70);
+    padding: 5px; */
+    box-shadow: 0 0 5px rgba(127, 124, 124, 0.737);
+}
+#nav img{
+    height: 100px;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    /* background-color: red; */
+    z-index: -1;
+}
+/* ---------------------------------------------------main div----------------------------------------- */
+#main{
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: rgba(0, 0, 0, 0.25);
+    position:relative;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9;
+}
+#page1 #eat-drink {
+    font-size: 180px;
+    font-weight: bold;
+    /* margin-bottom: -20px; */
+    position: relative;
+    /* background: pink; */
+}
+#page1 #eat-drink::before{
+    content: "EAT. DRINK.";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 1px #95c11e;
+    z-index: -1;
+    /* right: 1px; */
+}
+#page1 #play{
+    /* color: rebeccapurple; */
+    margin-top: -50px;
+    font-size: 180px;
+    position: relative;
+}
+#page1 #play::before{
+    content: "PLAY.";
+    position: absolute;
+    color: black;
+    /* top: -4px; */
+    left: -6px;
+    right: -6px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 35px;
+    font-weight: 900;
+    /* margin-top: -100px; */
+    position: relative;
+}
+#page1 p {
+    margin-top: 20px;
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+}
+/* ---------------------------------------------------Page2------------------------------------------------- */
+
+#page2{
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.115); */
+    width: 100%;
+    z-index: 20;
+}
+/* -------------FOR SCROLLE---------------------- */
+#scroller{
+    white-space: nowrap;
+    overflow-x:auto ;
+    overflow-y: hidden;   
+    position: relative;
+    z-index: 30;
+}
+/* remove scrollbar */
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller #scroller-in{
+    /* background-color: rebeccapurple; */
+    display: inline-block;
+    white-space: nowrap;   
+    animation-name: scroll;
+    animation-duration: 40s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;    
+    
+}
+/* --------animaation to run the scroller in----------------- */
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 130px;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    transition: all linear .3s;
+    margin: 10px;
+}
+#scroller h4:hover{
+    color: #739d00;
+    /* background-color: red; */
+}
+/* ----------------------------------------------about us section------------------------------------------- */
+
+#about-us{
+    /* background-color: rgb(205, 41, 41); */
+    height: 40vh;
+    width: 100%;
+    padding: 0 150px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* z-index: 10; */
+    /* align-items:center; */
+}
+#about-us .img-div{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+}
+#about-us .img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#about-us #info{
+    height: 500px;
+    width: 60%;
+    text-align: center;
+    /* background-color: yellow; */
+}
+#info h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -30px;
+    font-family:'Montserrat', sans-serif;
+}
+#info p{
+    font-size: 30px;
+    /* line-height: 25px; */
+    margin-top: 30px;
+}
+/* -----------------------------------------page 3 --------------------- */
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+} 
+#image-container{
+    /* background-color: red; */
+    height:80vh ;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+.card{
+    height: 100%;
+    width: 25%;
+    background-size:cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+    justify-content: end;
+    font-weight: bold;
+    position: relative;
+    transition: all .5s linear;
+}
+#card1{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&sharp=1");
+}
+#card2{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&sharp=1");
+}
+#card3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&sharp=1");
+}
+/*------------------ Tild effect on the card----------- */
+.card:hover{
+    transform: rotate3d(.5,-2,0,30deg);
+    
+}
+.overlay{
+    /* background-color: #739d00; */
+    height: 100%;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    white-space: normal;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all .5s;
+    
+}
+.overlay h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-family:'Montserrat', sans-serif;
+}
+.overlay h4{
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.overlay p{
+    font-size: 25px;
+    margin-top: 30px;
+    line-height: 30px;
+    color: black;
+    font-weight: 100;
+}
+.overlay:hover{
+    opacity: 1;
+    background-color:#95c11e;
+    
+}
+/* ---------------------------------------GREEN BOX----------------- */
+.green-box{
+    height: 40vh;
+    background: linear-gradient(to bottom, #119e05,#ACE022);
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.green-box h2{
+    width: 50%;
+    font-size: 40px;
+    word-spacing: 5px;
+    line-height: 60px;
+    font-size: 900;
+    color: black;
+    font-family:'Montserrat', sans-serif;
+}
+/* --------------------------------------------------------page 4--------------------------------------------- */
+
+#page4{
+    min-height: 80vh;
+    background-color: rgb(0, 0, 0);
+    
+}
+#food-container{
+    height: 80vh;
+    /* margin-top: 50px; */
+    /* background-color: #739d00; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.food-box{
+    height: 80%;
+    width: 45%;
+    /* border: 2px solid rgb(247, 13, 13); */
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    /* object-fit: cover; */
+}
+#food-img{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5.jpg?strip=all&sharp=1");
+
+}
+/* FOOD INFO */
+#food-info{
+    padding: 20px;    
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#food-info h1{
+    font-size: 80px;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+#food-info p {
+    /* text-align: center; */
+    /* margin-top: 50px; */
+    font-size: 30px;
+    font-weight: 100;
+}
+#food-info button{
+    width: 300px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #95c11e;
+    background-color: black;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+#food-info button:hover{
+    color: black;
+    background: #95c11e;
+    cursor: pointer;
+}
+#page5{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page5 .text-div{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 0 200px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#page5 .text-div img{
+    height: 100px;
+    width: 100px;
+}
+.text-div p {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+}
+#quote-right{
+    position: absolute;
+    right: 120px;
+    bottom: 70px;
+}
+/* -------------------------------------three-div-container---------- */
+#three-div-container {
+    height: 55vh;
+    /* background-color: red; */
+    padding-top: 100px;
+}
+#three-div-container .flex-box{
+    /* border: 2px solid red; */
+    /* background-color: yellow;    */
+    padding: 0 160px; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 30;
+
+}
+#three-div-container .three-div{
+    height: 200px;
+    width: 500px;
+    position: relative;
+    border-radius: 20px;
+}
+.three-div img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 2s linear;
+    border-radius: 20px;
+}
+#three-div-container .three-div h2{
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #95c11e;
+    color: black;
+    font-weight: 900;
+    font-size: 50px;
+    font-family:'Gilroy', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: all .5s linear;
+    border-radius: 20px;
+}
+#three-div-container .three-div h2:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+#three-div-container #text{
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: -40px;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+/* ---------------------------------footer div---------------- */
+#footer-div{
+     background: linear-gradient(to bottom, #119e05,#ACE022);
+    min-height: 47vh;
+    padding-left: 150px;
+    /* padding-right: 150px; */
+    padding-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    position: relative;
+}
+#footer-div .f2f3f4{
+    height: 280px;
+}
+#footer-div #f1{
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+#footer-div #f2 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: black;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 900;
+}
+#footer-div #f3 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: black;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 900;
+}
+#footer-div #f4 p{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    font-weight: 500;
+}
+#footer-div #f4 p span{
+    font-weight: 900;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+/* =====================copy right ------------------- */
+#copyright{
+    background-color: red;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: #739d00;
+}
+#copyright p:hover{
+    cursor: pointer;
+}

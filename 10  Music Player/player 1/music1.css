@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(53, 53, 53);
+}
+.music-container{
+    width: 500px;
+    /* height: 400px; */
+    background-color: rgba(241, 202, 208, 0.888);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.music-container:hover{
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+    transform: scale(1.01);
+}
+.header{
+    /* background-color: rgb(179, 162, 165); */
+    display: flex;
+    justify-content: space-between;
+}
+.header button{
+    height:30px;
+    width: 30px;
+    font-size: 20px;
+    /* font-weight: 900; */
+    /* background:yellow; */
+    color: purple;
+    border-radius: 50%;
+    text-align: center;
+    border: transparent;
+    cursor: pointer;
+}
+.image{
+    height: 250px;
+    width: 250px;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 40px auto;
+    border-radius: 50%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.song-name{
+    /* background-color: yellowgreen; */
+    text-align: center;
+    margin-top: -20px;
+}
+.music-line{
+    margin-top: 50px;
+    border: 5px solid purple;
+    border-radius: 10px;
+}
+
+
+/* song progress */
+#progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+/* we will control the range input dot  */
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background: purple;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 0 10px rgb(255, 26, 26, .22);
+}
+
+.buttons{
+    /* background-color: yellow; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.buttons button{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    border: transparent;
+    cursor: pointer;
+    color: purple;
+    font-size: 20px;
+}
+
+.buttons .pause-play{
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    background-color: rgb(135, 35, 130);
+    color: white;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Generate</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="notification-container">
+        <div class="select-option-div">
+            <button class="option" onclick="showError()"> Success </button>
+            <button class="option" onclick="showError()"> Error </button>
+            <button class="option" onclick="showError()"> Invalid </button>
+        </div>
+        <div class="error-box">
+        </div>
+    </div>
+
+    <script>
+
+        let SuccessMsg = "Successfully submitted";
+        let errorMsg = "Please fix the error";
+        let invalidMsg = "Invalid input, check again!";
+
+        function showError(msg){
+            let errorBox = document.querySelector(".error-box");
+
+            let errorDiv = document.createElement("div");
+            errorBox.appendChild(errorDiv);
+            errorDiv.className = "error-designing";
+            errorDiv.innerHTML = msg;           
+            
+            let img = document.createElement("img");
+            errorDiv.appendChild(img);
+            img.src="tick.png";
+            img.className = "img";
+
+            if(msg.include("Successfully")){
+                
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

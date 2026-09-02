@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #EAEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-page-container{
+    /* background-color: pink; */
+    height: 100vh;
+    /* border: 5px solid black; */
+}
+.nav{
+    /* background-color: yellowgreen; */
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav h2{
+    font-size: 40px;
+    color: rgb(27, 27, 252);
+}
+.nav .input-box{
+    /* background-color: purple; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .input-box input{
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    flex: 1;
+    padding-left: 20px;
+    outline: 0;
+    border: transparent;
+    background-color: white;
+    
+}
+.input-box button{
+    border-radius: 30px;
+    width: 100px;
+    font-size: 20px;
+    border: transparent;
+    background-color: rgba(27, 27, 252, 0.655);
+    cursor: pointer;
+}
+.nav ul{
+    /* background-color: pink; */
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    list-style: none;
+}
+.nav ul li a {
+    /* background-color: yellow; */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    border: 2px solid black;
+    color: white;
+    background-color: rgb(33, 29, 29);
+}
+/* -------------------------------------------------------Welcome section---------------------------- */
+.welcome-div{
+    background: rgba(27, 27, 252, 0.655);
+    background-color: pink;
+    padding: 50px;
+    /* padding-bottom: 100px; */
+    display: flex;
+    height:60% ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #EAEFEF;
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: ; */
+    /* color: rgb(65, 50, 30); */
+}
+.welcome-div h1{
+    font-size: 70px;
+}
+.welcome-div p{
+    font-size: 25px;
+}
+.welcome-div button{
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 50px;
+    color: rgba(27, 27, 252, 0.655);
+    font-weight: bold;
+    border: transparent;
+}
+.welcome-div button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*---------------------------------------- Shop By Category-------------------------- */
+
+
+.category h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+.category .underline{
+    width: 85px;
+    border: 3px solid rgba(27, 27, 252, 0.655);
+    display: inline-block;
+    margin-left: 48%;
+    border-radius: 30px;
+}
+/* -------------------------------------------Product Containers -----------------------*/
+.product-container{
+    /* background-color: pink; */
+    padding: 50px;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 30px;
+
+
+}
+.grid-product-card{
+    height: 400px;
+    width: 400px;
+    /* width: 200px; */
+    background-color: rgb(209, 209, 209);  
+    border-radius: 10px;  
+    box-shadow: 0 0 3px gray;
+}
+.grid-product-card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.grid-product-card .cloth-img{
+    height: 60%;
+    /* border: 2px solid black; */
+    /* background-image: url("product/card1.png"); */
+}
+.cloth-img img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-info{
+    /* background-color: palegoldenrod; */
+    padding: 20px;
+}
+.product-info h2{
+    margin-bottom: 15px;
+}
+.product-info button{
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: rgba(27, 27, 252, 0.655);
+    color: #EAEFEF;
+    border: transparent;
+    cursor: pointer;
+}
+.product-info button:hover{
+    transform: scale(1.02);
+}
+
+
+/* ------------------------------>LOGIN PAGE<------------------------------ */
+.login-page button{
+    font-size: 25px;
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.login-page{
+    height: 100vh;
+    /* background-color: pink; */
+    width: 100%;
+    background: #ce90ab;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    
+    
+}
+.login-page .title{
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline purple;
+}
+form{
+    /* text-align: center; */
+    /* border: 2px solid black; */
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+    font-family:verdana;
+    background-color: rgb(227, 207, 207);
+    border-radius: 10px;
+    
+}
+.user-details{
+    /* background-color: lightblue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.user-details div{
+    /* height: 100px; */
+    /* width: 100px; */
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.user-details label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.user-details div input{
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: transparent;
+    box-shadow: 2px 2px  rgba(63, 94, 251, 1);
+}
+
+
+/* -------------------------------------------Gender */
+.gender {
+    margin-top: 20px;    
+    /* background-color: yellow; */
+}
+.gender span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.gender .radio-div {
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    /* margin-left: 20px; */
+}
+.radio-div label{
+    cursor: pointer;
+}
+.radio-div div{
+    margin-right: 50px;
+}
+/* -------------------------------Register button */
+.register-btn{
+    background-color: green;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    color: white;
+    cursor: pointer;
+}

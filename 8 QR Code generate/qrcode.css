@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(8, 0, 46);
+}
+.qr-code-container{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.text{
+    margin-bottom: 15px;
+}
+#input-box{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    margin-bottom: 20px;
+}
+.qr-code{
+    /* border: 2px solid black; */
+    display: inline-block;
+    margin: 10px 100px;
+    height: 150px;
+    width: 150px;
+    display: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.generate-qr-code{
+    padding: 10px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.721);
+    border: transparent; 
+    cursor: pointer;   
+}
+.generate-qr-code:hover{
+    box-shadow: 0 0 4px gray;
+    transform: scale(1.01);
+}
+/* this class will be select when empty box will be empty */
+
+.emptyBox{
+    border: 12px solid rgb(255, 0, 0);
+}
+.emptyBox::placeholder{
+    color: red;
+}
+.emptyBox{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }25%{
+        transform: translate(-2px);
+    }50%{
+        transform: translate(0);
+    }75%{
+        transform: translate(2px);
+    }100%{
+        transform: translate(0);
+    }
+};

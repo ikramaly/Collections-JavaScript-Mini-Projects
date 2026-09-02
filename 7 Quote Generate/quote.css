@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(151, 188, 253, 0.744);
+    font-family: 'Times New Roman', Times, serif;
+}
+.quote-container{
+    width: 550px;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+#quote-heading{
+    text-align: center;
+    text-decoration: underline rgba(92, 13, 134, 0.853);
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.poem{
+    /* background-color: royalblue; */
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+#author-name{
+    text-align: end;
+    font-size: 25px;
+}
+.quote-tweet-div{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.quote-tweet{
+    border: 1px solid rgb(0, 13, 149);
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.quote-tweet:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 2px blue;
+}
+.quote-tweet img{
+    height: 30px;
+    margin-top: 5px;
+    position: absolute;
+    top: 4px;
+    left: 25px;
+}
+.quote-tweet span{
+    margin-left: 20px;
+}
+#new-quote{
+    color: white;
+    background: rgb(84, 107, 237);
+}

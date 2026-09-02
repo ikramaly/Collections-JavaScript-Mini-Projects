@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    margin: 100px auto 0;
+    padding:40px 35px ;
+    border-radius: 20px ;
+    text-align: center;
+    color: #fff;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #573838; */
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background:#ebfffc;
+    color: #555;
+    height: 60px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 20px;
+}
+.search button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+.search button img{
+    height: 20px;
+}
+.sun-image {
+    height: 150px;
+    width: 150px;
+    margin: 30px auto;
+}
+.sun-image img {
+    height: 150px;
+    width: 150px;
+}
+.div-temp h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.temp-info{
+    /* background-color: rgb(4, 112, 0); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.humidity-logo{
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+.wind-logo{
+    display: flex;
+    align-items: center;    
+}
+.logo{
+    margin-right: 10px;
+}
+.error p{
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Geneva;
+    word-spacing: 2px;
+    color: #801212;
+    display: none;
+    font-weight: bold;
+}

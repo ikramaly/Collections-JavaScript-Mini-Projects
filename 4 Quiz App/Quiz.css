@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d;
+}
+.app{
+    /* height: 100px; */
+    width: 90%;
+    max-width: 600px;
+    background-color:white;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+h1{
+    border-bottom: 2px solid rgb(68, 23, 23);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#question{
+    margin-bottom: 10px;
+}
+#answer-buttons{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: start;
+    transition: all .4s;
+    color: black;
+}
+.btn:hover:not([disabled]){
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(59, 67, 60);
+    background-color: rgb(91, 85, 85);
+    color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+.next-slide{
+    padding: 5px;
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    display: none;
+    margin: 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+.next-slide:hover{
+    background-color: #001e4d;
+    color: rgb(255, 255, 255);
+}
+/* correct class  */
+.correct{
+    background-color: rgb(120, 186, 120);
+}
+.inCorrect{
+    background-color: rgb(209, 142, 142);
+}

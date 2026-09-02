@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+    <div class="music-container">
+        <div class="header">
+            <button>
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+        <div class="image">
+            <img src="song-logo.jpg" alt="">
+        </div>
+        <div class="song-name">
+            <h1>Tum Hi Ho</h1>
+            <p>Arjit Singh, Aashiqui 2</p>
+        </div>
+        <!-- for song audio -->
+        <audio id="song">
+            <source src="Tum_Hi_Ho_Arijit_Singh.mp3" type="audio/mpeg">;
+        </audio>
+        <!-- range input -->
+        <input type="range" name="0" id="progress">   
+        
+        <div class="buttons">
+            <button><i class="fa-solid fa-backward"></i></button>
+            <button class="pause-play">
+                <!-- <i class="fa-solid fa-pause"></i>  -->
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button><i class="fa-solid fa-forward"></i></button>
+
+        </div>
+    </div>
+
+    <script src="music1.js"></script>
+</body>
+</html>

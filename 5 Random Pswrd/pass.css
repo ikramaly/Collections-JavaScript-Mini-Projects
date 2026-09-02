@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #002564;
+}
+.password-container{
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    /* border: 2px solid wheat; */
+    margin: 100px auto;
+}
+h1{
+    padding: 10px;
+}
+span{
+    color: rgb(227, 111, 2);
+    border-bottom: 2px solid rgb(227, 111, 2);
+}
+.password-box{
+    padding: 10px;
+    /* border: 2px solid beige;
+    background-color: palegoldenrod; */
+    /* width: 80%; */
+}
+.password-box input{
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px ;
+    border: transparent;
+    /* position: relative; */
+    background:rgb(242, 239, 239);
+    line-height: 40px;
+    font-size: 20px;
+}
+.password-btn{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
+    background-color:rgb(0, 118, 0);
+    color: white;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.password-btn:hover{
+    box-shadow: 0 0 4px black;
+    font-size: 16px;
+}
+.copy-button{
+    margin-left: -30px ;
+    cursor: pointer;    
+    border: transparent;
+}
+/* java script classes */
+
+/* para tag  */
+.para{
+    padding: 10px;
+    color: white;
+}
+/* copy password class */
+.copy-password{
+    color: rgb(226, 202, 179);
+
+}

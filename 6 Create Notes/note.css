@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+}
+.notes-container{
+    /* border: 2px solid black; */
+    margin: 100px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+}
+.notes-icon-box{
+    /* background: pink; */
+    display: flex;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1{
+    margin-top: 10px;
+    margin-left: -5px;
+    color: rgb(52, 7, 122);
+    /* background: palegreen; */
+}
+.create-note-btn{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    /* width: 200px; */
+    background-color: rgb(52, 7, 122);
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+}
+.create-note-btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgb(235, 138, 138);
+}
+.write-icon{
+    height: 30px;
+    width: 30px;
+    /* background-color: pink; */
+}
+.write-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.create-note-btn h2{
+    margin-top: 5px;
+}
+/* notes section */
+.note-section{
+    /* background-color: rgb(234, 162, 234); */
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    /* visibility: hidden; */
+}
+.note-section .textarea{
+    /* background: yellow; */
+    min-height:150px ;
+    width: 450px;
+    padding: 10px;
+    padding-right: 50px;
+    outline: 0;
+    resize: none;
+    border-radius: 10px;
+    transition: all .2s;
+}
+.note-section .textarea:hover{
+    box-shadow: 0 0 2px black;
+}
+.note-section img{
+    margin-left: -3px;
+}
+.note-section img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

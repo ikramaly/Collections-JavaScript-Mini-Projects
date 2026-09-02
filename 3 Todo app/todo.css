@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsla(310, 18%, 55%, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.card{
+    background-color: rgb(192, 201, 209);
+    width: 90%;
+    max-width: 470px;
+    min-height:400px ;
+    margin: 100px auto;    
+    border-radius: 30px;
+    padding: 20px;
+}
+.todo-heading{
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.todo-heading h1,img{
+    padding-right: 10px;
+    color: rgb(112, 44, 174);
+    margin-bottom: 15px;
+}
+.add-task{
+    background-color: rgb(207, 204, 204);
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    /* padding: 10px; */
+}
+.add-task input {
+    border-radius: 30px;
+    width: 100%;
+    background: transparent;
+    border: transparent;
+    outline: 0;
+}
+.add-task input[type="text"]{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.add-task button{
+    width: 100px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background:transparent;
+    border: transparent;
+    background-color: rgb(222, 62, 62);
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.task-list ul li {
+    list-style: none ;
+    /* line-height: 40px; */
+    padding: 5px 0px 12px 50px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    /* background-color: pink; */
+    position: relative;
+}
+ul li::before{
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border:1px solid black;
+    position: absolute;
+    left: 8px;
+    background-size:auto;
+    background-position: center;
+}
+ul li.checked::before{
+    color: #555;
+    background-image: url(imgs/tickbox.png);    
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+
+span{
+    /* background-color: red; */
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width:  30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    /* display: none; */
+}
+span:hover{
+    background-color: #edeef0;
+    color: #555;
+}
